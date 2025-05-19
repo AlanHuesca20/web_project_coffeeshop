@@ -1,92 +1,178 @@
 .page {
-  margin: auto;
-  font-family: "Inter", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
   min-width: 1100px;
   max-width: 1600px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
 }
 
 .header {
+  height: 100vh;
+  max-height: 800px;
+  min-height: 720px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  background-image: url(../images/background_header.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  min-height: 720px;
-  max-height: 800px;
-  padding: 30px 80px 40px;
-  position: relative;
-  box-sizing: border-box;
 }
 
 .nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  color: #000000;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-.nav__logo {
-  height: 80px;
-  width: 58px;
+.header__logo {
+  padding-left: 30px;
+  padding-top: 30px;
+  width: 105px;
+  height: 39px;
 }
 
 .nav__links {
   display: flex;
-  margin: 8px 0 0;
-  column-gap: 20px;
-  padding: 0;
-  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 30px;
+  padding-right: 80px;
+  gap: 20px;
   list-style-type: none;
-}
-
-.nav__link {
-  color: #000000;
-  text-decoration: none;
-  font-weight: bold;
 }
 
 .header__content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .header__title {
-  font-size: 62px;
-  line-height: 76px;
-  font-weight: 500;
-  max-width: 635px;
-  margin-top: 128px;
+  padding-left: 80px;
+  padding-top: 183px;
+  max-width: 709px;
 }
 
-.span-accent {
+.header__span-accent {
+  font-family: "Noto Serif";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 72px;
+  color: #2f80ed;
 }
 
 .header__description {
+  max-width: 683px;
+  padding-left: 80px;
+  padding-top: 28px;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-  max-width: 515px;
-  margin-top: 32px;
 }
 
 .header__image {
-  max-width: 636px;
-  margin: 0;
+  position: absolute;
+  width: 646px;
+  height: 568px;
+  right: 5px;
+  top: 124px;
 }
 
 .header__footer {
   margin-top: auto;
-  width: 100%;
+  padding-bottom: 40px;
+  padding-left: 80px;
+  margin-right: 80px;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  align-items: flex-end;
+  justify-content: space-between;
   box-sizing: border-box;
-}
-
-.header__link {
-  color: #2f80ed;
-  text-decoration: none;
+  z-index: 1;
 }
 
 .header__paragraph {
-  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
   color: #838383;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.content {
+  background-image: url(../images/background_recipes.svg);
+  background-color: #0a2750;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.recipes__title {
+  color: #ffffff;
+  padding-top: 100px;
+  padding-left: 80px;
+  max-width: 580px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.recipes__subtitle {
+  max-width: 438px;
+  color: #ffffff;
+  padding-top: 24px;
+  padding-left: 80px;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.recipes__videos {
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+  margin-top: 80px;
+  padding-bottom: 215px;
+}
+
+.recipes__video-item {
+  display: flex;
+  column-gap: 24px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+iframe {
+  width: 480px;
+  height: 273px;
+  border: 0;
+}
+
+.recipes__video-caption {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
 }
