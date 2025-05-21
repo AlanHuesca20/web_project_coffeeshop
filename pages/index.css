@@ -34,7 +34,7 @@
   line-height: 20px;
 }
 
-.header__logo {
+.nav__logo {
   padding-left: 30px;
   padding-top: 30px;
   width: 105px;
@@ -58,7 +58,7 @@
 .header__title {
   padding-left: 80px;
   padding-top: 183px;
-  max-width: 709px;
+  max-width: 708px;
 }
 
 .header__span-accent {
@@ -119,60 +119,67 @@
   background-repeat: no-repeat;
 }
 
+.recipes {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/background_recipes.svg);
+  background-color: #0a2750;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
 .recipes__title {
-  color: #ffffff;
-  padding-top: 100px;
-  padding-left: 80px;
-  max-width: 580px;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
+  max-width: 580px;
+  padding-top: 100px;
+  margin-left: 80px;
 }
 
 .recipes__subtitle {
-  max-width: 438px;
-  color: #ffffff;
-  padding-top: 24px;
-  padding-left: 80px;
-  font-family: "Noto Serif";
-  font-style: normal;
-  font-weight: normal;
+  font-family: "Noto Serif", Times, sans-serif;
   font-size: 20px;
   line-height: 30px;
+  margin-left: 80px;
+  padding-top: 24px;
+  max-width: 438px;
 }
 
 .recipes__videos {
   display: flex;
-  justify-content: center;
-  column-gap: 40px;
-  margin-top: 80px;
-  padding-bottom: 215px;
+  width: 1000px;
+  height: 273px;
+  margin: 80px auto 215px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .recipes__video-item {
   display: flex;
+  width: 100%;
+  border: 0;
   column-gap: 24px;
-  flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 40px;
 }
 
-iframe {
+.recipes__iframe {
   width: 480px;
   height: 273px;
   border: 0;
 }
 
 .recipes__video-caption {
-  margin-top: 24px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  font-family: "Inter";
-  font-style: normal;
+  height: 20px;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
-  color: #ffffff;
+  margin-top: 24px;
+  align-items: center;
 }
