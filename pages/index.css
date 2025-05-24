@@ -59,6 +59,12 @@
   padding-left: 80px;
   padding-top: 183px;
   max-width: 708px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: 1px;
 }
 
 .header__span-accent {
